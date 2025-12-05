@@ -5,7 +5,7 @@
 The purpose of this repository is to help technical writers draft their
 performance and growth self reflections. When writers ask questions about the
 performance and growth process or their self reflection, ALWAYS refer to the
-documents outlined in [company references](#company-references).
+documents outlined in `company-process-files/`.
 
 ## Specialized agents available
 
