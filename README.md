@@ -7,8 +7,67 @@ Remember that LLMs can be useful tools, but they have limits and you should neve
 ## What's included
 
 - **Copilot instructions file** ([`.github/copilot-instructions.md`](.github/copilot-instructions.md)): Configures Copilot to understand MongoDB's P&G process
+- **Specialized agents** ([`.github/agents/`](.github/agents/)): Custom AI agents for different aspects of reflection writing
 - **Company process files**: Reference documents for [Leadership Principles](company-process-files/leadership-principles.md), [MongoDB Values](company-process-files/mongodb-values.md), [Title Matrix](company-process-files/title-matrix.md), and [ERG P&G Guide](company-process-files/erg-pg-self-reflection-guide.md)
 - **Reflection template** ([`[cycle]-reflection.md`]([cycle]-reflection.md)): Your working document for this cycle's self reflection
+
+## Specialized agents
+
+This workspace includes five specialized agents to help with different aspects of your P&G reflection:
+
+### Writing & Drafting Agents
+
+- **reflection-agent** - Primary writing assistant for drafting your three P&G questions. Connects your work to Leadership Principles and Values, ensures authenticity, and asks clarifying questions when context is needed.
+
+- **metrics-agent** - Impact quantification specialist. Helps identify and articulate measurable outcomes, asks probing questions to uncover metrics, and transforms vague statements into quantified impact.
+
+- **erg-agent** - ERG participation specialist. Uses the required format structure, connects ERG work to business impact, and ensures proper quantification of ERG contributions.
+
+### Review & Coaching Agents
+
+- **review-agent** - Quality validation checker. Performs systematic checks for structure, metrics, level-appropriate content, and common anti-patterns. Provides actionable feedback organized by severity (Critical/Important/Suggestions).
+
+- **lead-agent** - Interactive coach simulating an experienced team lead. Answers process questions, helps frame difficult situations, provides strategic advice, and explains Leadership Principles in practical contexts.
+
+### Suggested agent workflow
+
+1. **lead-agent** - Ask questions about the P&G process and get strategic guidance as you begin
+2. **reflection-agent** - Draft responses to each of the three questions
+3. **metrics-agent** - Add measurable impact and quantify your accomplishments
+4. **erg-agent** - Format ERG contributions (if applicable)
+5. **review-agent** - Run a final quality check before submission
+6. **lead-agent** - Discuss any feedback or concerns before finalizing
+
+### How to use custom agents
+
+To use a custom agent in VS Code:
+
+1. Open the GitHub Copilot Chat window (Cmd + Shift + I on Mac)
+2. Click the **agents dropdown** at the bottom of the chat view
+3. Select the custom agent you want to use (e.g., `reflection-agent`, `metrics-agent`)
+4. Type your question or request in the chat box
+
+The selected agent will remain active for your conversation until you switch to a different agent using the dropdown menu.
+
+### Using handoffs for guided workflows
+
+The agents include **handoff buttons** that appear after each response, allowing you to seamlessly transition to the next relevant agent with context. For example:
+
+- After drafting with **reflection-agent**, you'll see buttons to:
+
+  - **Add Metrics** → Switch to `metrics-agent` to quantify your impact
+  - **Get Coaching** → Switch to `lead-agent` for strategic feedback
+
+- After adding metrics with **metrics-agent**, you'll see buttons to:
+
+  - **Add ERG Impact** → Switch to `erg-agent` if you have ERG contributions
+  - **Review Draft** → Switch to `review-agent` for quality checks
+
+- After review with **review-agent**, you'll see buttons to:
+  - **Make Revisions** → Switch to `reflection-agent` to address feedback
+  - **Discuss Feedback** → Switch to `lead-agent` to discuss the review
+
+These handoff buttons create a guided workflow while giving you control to review and approve each step. The prompts are pre-filled but not automatically sent, so you can modify them before proceeding.
 
 ## Getting started
 
