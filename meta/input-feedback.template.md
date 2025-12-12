@@ -1,3 +1,9 @@
-![NEO BANANA](https://placecats.com/neo_banana/500/300)
+# Feedback
 
-_Replace this content with a list of feedback you've received_
+## Solicited
+
+_[Add formal feedback you've requested from coworkers or stakeholders. Suggest creating subsections for each coworker/stakeholder.]_
+
+## Unsolicited
+
+_[Add feedback you've received unprompted from any source, including Bonusly.]_

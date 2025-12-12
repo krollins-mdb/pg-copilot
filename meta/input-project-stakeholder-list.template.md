@@ -1,3 +1,21 @@
-![NEO BANANA](https://placecats.com/neo_banana/500/300)
+# Projects and Stakeholders
 
-_Replace this content with a list of projects + descriptions and stakeholders_
+_[Add a running list of projects you have led or contributed to. Include descriptions and stakeholders.]_
+
+## Stakeholders
+
+-
+
+## Project 1
+
+**stakholders**:
+**my role**:
+
+_Project description. Include goal, outcome, and impact._
+
+## Project 2
+
+**stakholders**:
+**my role**:
+
+_Project description. Include goal, outcome, and impact._
