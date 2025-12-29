@@ -1,6 +1,10 @@
-# Project List
+# Projects and Stakeholders
 
 _[Add a running list of projects you have led or contributed to. Include descriptions and stakeholders.]_
+
+## Stakeholders
+
+-
 
 ## Project 1
 
