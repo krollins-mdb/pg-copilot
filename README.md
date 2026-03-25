@@ -100,6 +100,28 @@ Review my development plan goals and help me:
 - Identify which leadership principles helped (or would help) me grow
 ```
 
+## Find your past work
+
+Before you start writing, gather evidence of your accomplishments from JIRA and GitHub.
+
+### JIRA tickets
+
+Use this JQL query to find tickets you've completed in the past 180 days:
+
+```
+assignee = currentUser() AND resolution in (Done, Fixed) AND (created > -180d OR updated > -180d) order by updatedDate DESC
+```
+
+### GitHub pull requests
+
+Use this GitHub search query to find your past PRs:
+
+```
+is:pr author:<YourGitHubUsername> archived:false created:2025-01-01..2025-06-01
+```
+
+Replace `<YourGitHubUsername>` with your GitHub username and adjust the date range to match your review cycle.
+
 ## Import content from Google Docs and Google Sheets
 
 ### From Google Docs
